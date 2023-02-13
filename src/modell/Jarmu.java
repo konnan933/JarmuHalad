@@ -10,9 +10,15 @@ package modell;
  * @author Sammy Guergachi <sguergachi at gmail.com>
  */
 public abstract class Jarmu {
-    private boolean beinditva = false;
-    private boolean uzemanyag = true;
-    private boolean megerkezett = false;
+    private boolean beinditva ;
+    private boolean uzemanyag ;
+    private boolean megerkezett ;
+
+    public Jarmu(boolean beinditva, boolean uzemanyag, boolean megerkezett) {
+        this.beinditva = beinditva;
+        this.uzemanyag = uzemanyag;
+        this.megerkezett = megerkezett;
+    }
     
     public void beiindit(){
     
