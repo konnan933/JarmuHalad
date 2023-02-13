@@ -13,6 +13,12 @@ public abstract class Jarmu {
     private boolean beinditva ;
     private boolean uzemanyag ;
     private boolean megerkezett ;
+    
+    public Jarmu() {
+        this.beinditva = false;
+        this.uzemanyag = true;
+        this.megerkezett = false;
+    }
 
     public Jarmu(boolean beinditva, boolean uzemanyag, boolean megerkezett) {
         this.beinditva = beinditva;
@@ -21,10 +27,10 @@ public abstract class Jarmu {
     }
     
     public void beiindit(){
-    
+        beinditva = halad();
     }
     public void leallit(){
-    
+        beinditva = false;
     }
     public boolean tankol(){
         return true;
