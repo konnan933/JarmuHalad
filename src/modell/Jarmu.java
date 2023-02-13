@@ -15,15 +15,15 @@ public abstract class Jarmu {
     private boolean megerkezett ;
     
     public Jarmu() {
-        this.beinditva = false;
-        this.uzemanyag = true;
-        this.megerkezett = false;
+        setBeinditva(false);
+        setUzemanyag(true);
+        setMegerkezett(false);
     }
 
     public Jarmu(boolean beinditva, boolean uzemanyag, boolean megerkezett) {
-        this.beinditva = beinditva;
-        this.uzemanyag = uzemanyag;
-        this.megerkezett = megerkezett;
+        setBeinditva(beinditva);
+        setUzemanyag(uzemanyag);
+        setMegerkezett(megerkezett);
     }
     
     public void beiindit(){
@@ -33,9 +33,38 @@ public abstract class Jarmu {
         beinditva = false;
     }
     public boolean tankol(){
-        return true;
+        if(beinditva == false){
+            return true;
+        }
+        return false;
     }
     public boolean halad(){
         return true;
     }
+
+    public boolean isBeinditva() {
+        return beinditva;
+    }
+
+    public boolean isUzemanyag() {
+        return uzemanyag;
+    }
+
+    public boolean isMegerkezett() {
+        return megerkezett;
+    }
+
+    public void setBeinditva(boolean beinditva) {
+        this.beinditva = beinditva;
+    }
+
+    public void setUzemanyag(boolean uzemanyag) {
+        this.uzemanyag = uzemanyag;
+    }
+
+    public void setMegerkezett(boolean megerkezett) {
+        this.megerkezett = megerkezett;
+    }
+    
+    
 }

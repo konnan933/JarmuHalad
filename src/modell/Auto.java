@@ -2,10 +2,11 @@
 package modell;
 
 
-public class Auto {
+public class Auto extends Jarmu{
     private boolean defekt;
 
-    public Auto() {
+    public Auto () {
+        super();
         this.defekt = false;
     }
     
@@ -14,9 +15,16 @@ public class Auto {
     }
     
     public void kereketCsere(){
-        defekt = true;
+        defekt = false;
     }
+    
+    @Override
     public boolean halad(){
+        if(Math.random() < 0.25){
+            defekt = true;
+        }else{
+            setMegerkezett(true);
+        }
         return true;
     }
 }
