@@ -27,7 +27,7 @@ public abstract class Jarmu {
     }
     
     public void beiindit(){
-        beinditva = halad();
+        beinditva = true;
     }
     public void leallit(){
         beinditva = false;

@@ -24,7 +24,14 @@ public class Auto extends Jarmu{
             defekt = true;
         }else{
             setMegerkezett(true);
+            setUzemanyag(false);
         }
         return true;
     }
+
+    public boolean isDefekt() {
+        return defekt;
+    }
+    
+    
 }
