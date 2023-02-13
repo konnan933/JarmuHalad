@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package jarmuhalad;
+package modell;
 
 /**
  * 
@@ -23,7 +23,7 @@ public abstract class Jarmu {
     public boolean tankol(){
         return true;
     }
-    public void halad(){
-    
+    public boolean halad(){
+        return true;
     }
 }

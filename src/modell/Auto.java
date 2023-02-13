@@ -1,5 +1,5 @@
 
-package jarmuhalad;
+package modell;
 
 
 public class Auto {
